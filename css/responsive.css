@@ -1,0 +1,59 @@
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: var(--font-size-xl);
+    }
+
+    header p {
+        font-size: var(--font-size-base);
+    }
+
+    .converter-card {
+        padding: var(--spacing-lg);
+    }
+
+    .converted-value {
+        font-size: var(--font-size-lg);
+    }
+
+    .original-value .value {
+        font-size: var(--font-size-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: var(--spacing-sm);
+    }
+
+    header h1 {
+        font-size: var(--font-size-lg);
+        gap: var(--spacing-xs);
+    }
+
+    header h1 .icon-exchange {
+        width: 24px;
+        height: 24px;
+    }
+
+    .converter-card {
+        padding: var(--spacing-md);
+    }
+
+    .conversion-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .currency-flag {
+        width: 40px;
+        height: 40px;
+    }
+
+    .currency-flag svg {
+        width: 28px;
+        height: 28px;
+    }
+}
