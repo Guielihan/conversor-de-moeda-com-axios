@@ -11,7 +11,7 @@ body {
     font-family: var(--font-family);
     font-size: var(--font-size-base);
     line-height: 1.6;
-    color: #fff;
+    color: var(--text-primary);
     background: var(--gradient-bg);
     min-height: 100vh;
     display: flex;
@@ -25,7 +25,7 @@ body {
    ======================================== */
 .container {
     width: 100%;
-    max-width: 600px;
+    max-width: 480px;
 }
 
 header {
@@ -41,14 +41,14 @@ header h1 {
     align-items: center;
     justify-content: center;
     gap: var(--spacing-sm);
+    color: var(--text-primary);
 }
 
 header h1 .icon-exchange {
     color: var(--primary);
-    filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.5));
 }
 
 header p {
-    font-size: var(--font-size-lg);
-    opacity: 0.9;
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
 }
