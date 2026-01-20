@@ -4,6 +4,10 @@
     border-radius: var(--radius-xl);
     padding: var(--spacing-xl);
     box-shadow: var(--shadow-xl);
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .input-group {
@@ -140,7 +144,7 @@
 
 .result-area {
     margin-top: var(--spacing-lg);
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm);
     background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(16, 185, 129, 0.02) 100%);
     border: 2px solid rgba(16, 185, 129, 0.2);
     border-radius: var(--radius-lg);
@@ -148,6 +152,7 @@
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .result-header {
@@ -198,8 +203,8 @@
 .conversion-row {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem;
+    gap: 0.25rem;
+    padding: 0.5rem;
     background: var(--bg-primary);
     border: 1px solid var(--bg-tertiary);
     border-radius: var(--radius-md);
@@ -207,6 +212,7 @@
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .conversion-row:hover {
@@ -218,11 +224,12 @@
     flex: 1;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
     background: var(--bg-secondary);
     border-radius: var(--radius-sm);
     min-width: 0;
+    overflow: hidden;
 }
 
 .currency-box.from {
