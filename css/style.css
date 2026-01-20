@@ -131,9 +131,25 @@ header p {
     color: rgba(255, 255, 255, 0.9);
 }
 
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: var(--spacing-md);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--primary);
+    pointer-events: none;
+    z-index: 1;
+}
+
 .input-group input {
     width: 100%;
-    padding: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) 3.5rem;
     font-size: var(--font-size-lg);
     font-family: var(--font-family);
     background: rgba(255, 255, 255, 0.1);
@@ -184,9 +200,6 @@ header p {
     transform: none;
 }
 
-/* ========================================
-   SPINNER DE LOADING
-   ======================================== */
 .spinner {
     text-align: center;
     padding: var(--spacing-xl) 0;
@@ -224,9 +237,6 @@ header p {
     }
 }
 
-/* ========================================
-   ÁREA DE RESULTADO
-   ======================================== */
 .result-area {
     margin-top: var(--spacing-lg);
     padding: var(--spacing-lg);
@@ -344,9 +354,6 @@ header p {
     }
 }
 
-/* ========================================
-   ÁREA DE ERRO
-   ======================================== */
 .error-area {
     margin-top: var(--spacing-lg);
     padding: var(--spacing-lg);
@@ -399,16 +406,10 @@ header p {
     }
 }
 
-/* ========================================
-   CLASSE UTILITÁRIA - HIDDEN
-   ======================================== */
 .hidden {
     display: none;
 }
 
-/* ========================================
-   RESPONSIVIDADE
-   ======================================== */
 @media (max-width: 768px) {
     header h1 {
         font-size: var(--font-size-xl);
