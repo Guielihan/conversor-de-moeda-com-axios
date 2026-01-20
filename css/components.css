@@ -140,7 +140,7 @@
 
 .result-area {
     margin-top: var(--spacing-lg);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(16, 185, 129, 0.02) 100%);
     border: 2px solid rgba(16, 185, 129, 0.2);
     border-radius: var(--radius-lg);
@@ -198,8 +198,8 @@
 .conversion-row {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm) var(--spacing-md);
+    gap: 0.5rem;
+    padding: 0.75rem;
     background: var(--bg-primary);
     border: 1px solid var(--bg-tertiary);
     border-radius: var(--radius-md);
@@ -218,10 +218,11 @@
     flex: 1;
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm);
+    gap: 0.5rem;
+    padding: 0.5rem;
     background: var(--bg-secondary);
     border-radius: var(--radius-sm);
+    min-width: 0;
 }
 
 .currency-box.from {
