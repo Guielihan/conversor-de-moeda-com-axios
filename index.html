@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conversor de Moeda em tempo real usando Axios e AwesomeAPI - GoDevs">
+    <title>Conversor - GoDevs</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>💱 Conversor - GoDevs</h1>
+            <p>Conversão de moeda em tempo real</p>
+        </header>
+
+        <main class="converter-card">
+            <div class="input-group">
+                <label for="amount">Valor em Reais (BRL)</label>
+                <input type="number" id="amount" placeholder="Digite o valor em R$" min="0" step="0.01"
+                    autocomplete="off">
+            </div>
+
+            <button id="convertBtn" class="convert-btn">
+                Converter
+            </button>
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="spinner hidden">
+                <div class="spinner-circle"></div>
+                <p>Buscando cotações...</p>
+            </div>
+
+            <!-- Result Area -->
+            <div id="resultArea" class="result-area hidden">
+                <div class="result-header">
+                    <h3>Resultado da Conversão</h3>
+                    <p id="timestamp" class="timestamp"></p>
+                </div>
+
+                <div class="original-value">
+                    <span class="label">Valor Original:</span>
+                    <span id="originalValue" class="value"></span>
+                </div>
+
+                <div class="conversions">
+                    <div class="conversion-card">
+                        <div class="currency-flag">🇺🇸</div>
+                        <div class="conversion-info">
+                            <span class="currency-name">Dólar Americano (USD)</span>
+                            <span id="usdValue" class="converted-value"></span>
+                            <span id="usdRate" class="exchange-rate"></span>
+                        </div>
+                    </div>
+
+                    <div class="conversion-card">
+                        <div class="currency-flag">🇪🇺</div>
+                        <div class="conversion-info">
+                            <span class="currency-name">Euro (EUR)</span>
+                            <span id="eurValue" class="converted-value"></span>
+                            <span id="eurRate" class="exchange-rate"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Error Area -->
+            <div id="errorArea" class="error-area hidden">
+                <div class="error-icon">⚠️</div>
+                <h3>Erro ao buscar cotações</h3>
+                <p id="errorMessage"></p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
