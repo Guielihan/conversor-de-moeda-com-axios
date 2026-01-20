@@ -12,7 +12,14 @@
 <body>
     <div class="container">
         <header>
-            <h1>💱 Conversor - GoDevs</h1>
+            <h1>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="icon-exchange">
+                    <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8V20M17 20L21 16M17 20L13 16" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Conversor - GoDevs
+            </h1>
             <p>Conversão de moeda em tempo real</p>
         </header>
 
@@ -27,13 +34,11 @@
                 Converter
             </button>
 
-            <!-- Loading Spinner -->
             <div id="loadingSpinner" class="spinner hidden">
                 <div class="spinner-circle"></div>
                 <p>Buscando cotações...</p>
             </div>
 
-            <!-- Result Area -->
             <div id="resultArea" class="result-area hidden">
                 <div class="result-header">
                     <h3>Resultado da Conversão</h3>
@@ -47,7 +52,14 @@
 
                 <div class="conversions">
                     <div class="conversion-card">
-                        <div class="currency-flag">🇺🇸</div>
+                        <div class="currency-flag">
+                            <svg width="32" height="32" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#fff" d="M0 0h640v480H0z" />
+                                <path fill="#bf0a30"
+                                    d="M0 0h640v37H0zm0 74h640v37H0zm0 73h640v37H0zm0 74h640v37H0zm0 73h640v37H0zm0 74h640v37H0zm0 73h640v37H0z" />
+                                <path fill="#002868" d="M0 0h364v258H0z" />
+                            </svg>
+                        </div>
                         <div class="conversion-info">
                             <span class="currency-name">Dólar Americano (USD)</span>
                             <span id="usdValue" class="converted-value"></span>
@@ -56,7 +68,13 @@
                     </div>
 
                     <div class="conversion-card">
-                        <div class="currency-flag">🇪🇺</div>
+                        <div class="currency-flag">
+                            <svg width="32" height="32" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#039" d="M0 0h213.3v480H0z" />
+                                <path fill="#fff" d="M213.3 0h213.4v480H213.3z" />
+                                <path fill="#f00" d="M426.7 0H640v480H426.7z" />
+                            </svg>
+                        </div>
                         <div class="conversion-info">
                             <span class="currency-name">Euro (EUR)</span>
                             <span id="eurValue" class="converted-value"></span>
@@ -68,14 +86,19 @@
 
             <!-- Error Area -->
             <div id="errorArea" class="error-area hidden">
-                <div class="error-icon">⚠️</div>
+                <div class="error-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 9V11M12 15H12.01M5.07 19H18.93C20.54 19 21.38 17.14 20.43 15.86L13.5 4.93C12.55 3.65 10.45 3.65 9.5 4.93L2.57 15.86C1.62 17.14 2.46 19 4.07 19H5.07Z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
                 <h3>Erro ao buscar cotações</h3>
                 <p id="errorMessage"></p>
             </div>
         </main>
     </div>
 
-    <!-- Axios CDN -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="js/script.js"></script>
 </body>
