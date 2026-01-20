@@ -51,11 +51,13 @@
 .input-group input::-webkit-outer-spin-button,
 .input-group input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    appearance: none;
     margin: 0;
 }
 
 .input-group input[type=number] {
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .input-group input:focus {
