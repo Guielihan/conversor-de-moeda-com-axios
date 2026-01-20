@@ -47,40 +47,75 @@
                     <p id="timestamp" class="timestamp"></p>
                 </div>
 
-                <div class="original-value">
-                    <span class="label">Valor Original:</span>
-                    <span id="originalValue" class="value"></span>
-                </div>
-
                 <div class="conversions">
-                    <div class="conversion-card">
-                        <div class="currency-flag">
-                            <svg width="32" height="32" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#fff" d="M0 0h640v480H0z" />
-                                <path fill="#bf0a30"
-                                    d="M0 0h640v37H0zm0 74h640v37H0zm0 73h640v37H0zm0 74h640v37H0zm0 73h640v37H0zm0 74h640v37H0zm0 73h640v37H0z" />
-                                <path fill="#002868" d="M0 0h364v258H0z" />
-                            </svg>
+                    <!-- Conversão USD -->
+                    <div class="conversion-row">
+                        <div class="currency-box from">
+                            <div class="currency-flag">
+                                <svg width="32" height="32" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#009b3a" d="M0 0h640v480H0z" />
+                                    <path fill="#fedf00" d="M321.4 436 19.6 240 321.4 44l301.8 196z" />
+                                    <circle cx="320" cy="240" r="75" fill="#002776" />
+                                </svg>
+                            </div>
+                            <div class="currency-info">
+                                <span class="currency-label">De</span>
+                                <span id="brlValueUsd" class="currency-value"></span>
+                                <span class="currency-code">BRL</span>
+                            </div>
                         </div>
-                        <div class="conversion-info">
-                            <span class="currency-name">Dólar Americano (USD)</span>
-                            <span id="usdValue" class="converted-value"></span>
-                            <span id="usdRate" class="exchange-rate"></span>
+
+                        <div class="arrow-icon">→</div>
+
+                        <div class="currency-box to">
+                            <div class="currency-flag">
+                                <svg width="32" height="32" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#fff" d="M0 0h640v480H0z" />
+                                    <path fill="#bf0a30"
+                                        d="M0 0h640v37H0zm0 74h640v37H0zm0 73h640v37H0zm0 74h640v37H0zm0 73h640v37H0zm0 74h640v37H0zm0 73h640v37H0z" />
+                                    <path fill="#002868" d="M0 0h364v258H0z" />
+                                </svg>
+                            </div>
+                            <div class="currency-info">
+                                <span class="currency-label">Para</span>
+                                <span id="usdValue" class="currency-value"></span>
+                                <span class="currency-code">USD</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="conversion-card">
-                        <div class="currency-flag">
-                            <svg width="32" height="32" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#039" d="M0 0h213.3v480H0z" />
-                                <path fill="#fff" d="M213.3 0h213.4v480H213.3z" />
-                                <path fill="#f00" d="M426.7 0H640v480H426.7z" />
-                            </svg>
+                    <!-- Conversão EUR -->
+                    <div class="conversion-row">
+                        <div class="currency-box from">
+                            <div class="currency-flag">
+                                <svg width="32" height="32" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#009b3a" d="M0 0h640v480H0z" />
+                                    <path fill="#fedf00" d="M321.4 436 19.6 240 321.4 44l301.8 196z" />
+                                    <circle cx="320" cy="240" r="75" fill="#002776" />
+                                </svg>
+                            </div>
+                            <div class="currency-info">
+                                <span class="currency-label">De</span>
+                                <span id="brlValueEur" class="currency-value"></span>
+                                <span class="currency-code">BRL</span>
+                            </div>
                         </div>
-                        <div class="conversion-info">
-                            <span class="currency-name">Euro (EUR)</span>
-                            <span id="eurValue" class="converted-value"></span>
-                            <span id="eurRate" class="exchange-rate"></span>
+
+                        <div class="arrow-icon">→</div>
+
+                        <div class="currency-box to">
+                            <div class="currency-flag">
+                                <svg width="32" height="32" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#039" d="M0 0h213.3v480H0z" />
+                                    <path fill="#fff" d="M213.3 0h213.4v480H213.3z" />
+                                    <path fill="#f00" d="M426.7 0H640v480H426.7z" />
+                                </svg>
+                            </div>
+                            <div class="currency-info">
+                                <span class="currency-label">Para</span>
+                                <span id="eurValue" class="currency-value"></span>
+                                <span class="currency-code">EUR</span>
+                            </div>
                         </div>
                     </div>
                 </div>
