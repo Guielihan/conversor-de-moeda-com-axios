@@ -154,9 +154,6 @@ header p {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* ========================================
-   BOTÃO CONVERTER
-   ======================================== */
 .convert-btn {
     width: 100%;
     padding: var(--spacing-md);
