@@ -14,12 +14,17 @@
         padding: var(--spacing-lg);
     }
 
-    .converted-value {
-        font-size: var(--font-size-lg);
+    .conversion-row {
+        flex-direction: column;
+        gap: var(--spacing-md);
     }
 
-    .original-value .value {
-        font-size: var(--font-size-lg);
+    .arrow-icon {
+        transform: rotate(90deg);
+    }
+
+    .currency-box {
+        width: 100%;
     }
 }
 
@@ -42,18 +47,21 @@
         padding: var(--spacing-md);
     }
 
-    .conversion-card {
-        flex-direction: column;
-        text-align: center;
+    .conversion-row {
+        padding: var(--spacing-sm);
     }
 
     .currency-flag {
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
     }
 
     .currency-flag svg {
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .currency-value {
+        font-size: var(--font-size-lg);
     }
 }
