@@ -4,11 +4,11 @@ const loadingSpinner = document.getElementById('loadingSpinner');
 const resultArea = document.getElementById('resultArea');
 const errorArea = document.getElementById('errorArea');
 
-const originalValue = document.getElementById('originalValue');
+// Elementos de resultado - novo layout
+const brlValueUsd = document.getElementById('brlValueUsd');
+const brlValueEur = document.getElementById('brlValueEur');
 const usdValue = document.getElementById('usdValue');
 const eurValue = document.getElementById('eurValue');
-const usdRate = document.getElementById('usdRate');
-const eurRate = document.getElementById('eurRate');
 const timestamp = document.getElementById('timestamp');
 const errorMessage = document.getElementById('errorMessage');
 
@@ -66,24 +66,23 @@ async function fetchRates() {
 }
 
 function renderResult(amount, rates) {
-    // calculo das conversoes
+    // Cálculo das conversões
     const usdAmount = amount / rates.usd;
     const eurAmount = amount / rates.eur;
 
-    // atualizacao de valores
-    originalValue.textContent = formatMoney(amount, 'BRL');
+    // Atualização dos valores - BRL (origem)
+    brlValueUsd.textContent = formatMoney(amount, 'BRL');
+    brlValueEur.textContent = formatMoney(amount, 'BRL');
+
+    // Atualização dos valores convertidos
     usdValue.textContent = formatMoney(usdAmount, 'USD');
     eurValue.textContent = formatMoney(eurAmount, 'EUR');
 
-    // atualizacao das taxas de cambio
-    usdRate.textContent = `1 USD = ${formatMoney(rates.usd, 'BRL')}`;
-    eurRate.textContent = `1 EUR = ${formatMoney(rates.eur, 'BRL')}`;
-
-    // atualizacao do timestamp
+    // Atualização do timestamp
     const now = new Date();
     timestamp.textContent = `Atualizado em: ${now.toLocaleString('pt-BR')}`;
 
-    // exibe a area de resultado
+    // Exibe a área de resultado
     resultArea.classList.remove('hidden');
 }
 
