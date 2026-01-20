@@ -1,9 +1,5 @@
-/* Importação de Fonte */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* ========================================
-   VARIÁVEIS CSS & TOKENS DE DESIGN
-   ======================================== */
 :root {
     /* Cores */
     --primary: #6366f1;
@@ -15,7 +11,7 @@
 
     /* Gradientes */
     --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-bg: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    --gradient-bg: linear-gradient(135deg, #020817 0%, #0f172a 100%);
     --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
 
     /* Espaçamentos */
@@ -49,9 +45,6 @@
     --transition-slow: 0.5s ease;
 }
 
-/* ========================================
-   RESET & BASE
-   ======================================== */
 * {
     margin: 0;
     padding: 0;
@@ -71,9 +64,6 @@ body {
     padding: var(--spacing-md);
 }
 
-/* ========================================
-   CONTAINER & LAYOUT
-   ======================================== */
 .container {
     width: 100%;
     max-width: 600px;
@@ -104,9 +94,6 @@ header p {
     opacity: 0.9;
 }
 
-/* ========================================
-   CARD PRINCIPAL
-   ======================================== */
 .converter-card {
     background: var(--gradient-card);
     backdrop-filter: blur(20px);
@@ -116,9 +103,6 @@ header p {
     box-shadow: var(--shadow-lg);
 }
 
-/* ========================================
-   INPUT GROUP
-   ======================================== */
 .input-group {
     margin-bottom: var(--spacing-lg);
 }
@@ -154,9 +138,6 @@ header p {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* ========================================
-   BOTÃO CONVERTER
-   ======================================== */
 .convert-btn {
     width: 100%;
     padding: var(--spacing-md);
@@ -187,9 +168,6 @@ header p {
     transform: none;
 }
 
-/* ========================================
-   CLASSE UTILITÁRIA - HIDDEN
-   ======================================== */
 .hidden {
     display: none;
 }
