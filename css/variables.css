@@ -1,42 +1,32 @@
-/* Importação de Fonte */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* ========================================
-   VARIÁVEIS CSS & TOKENS DE DESIGN
-   ======================================== */
 :root {
-    /* Cores */
-    --primary: #7c3aed;
-    --primary-dark: #6d28d9;
-    --primary-light: #8b5cf6;
+    --primary: #52b69a;
+    --primary-dark: #3fa085;
+    --primary-light: #74c7b0;
     --secondary: #6366f1;
     --success: #10b981;
     --error: #ef4444;
     --warning: #f59e0b;
 
-    /* Cores de texto */
     --text-primary: #1f2937;
     --text-secondary: #6b7280;
     --text-light: #9ca3af;
 
-    /* Cores de fundo */
     --bg-primary: #ffffff;
     --bg-secondary: #f9fafb;
     --bg-tertiary: #f3f4f6;
 
-    /* Gradientes */
-    --gradient-primary: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%);
-    --gradient-bg: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%);
+    --gradient-primary: linear-gradient(135deg, #52b69a 0%, #74c7b0 100%);
+    --gradient-bg: #020817;
     --gradient-card: linear-gradient(135deg, #ffffff 0%, #fefefe 100%);
 
-    /* Espaçamentos */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
 
-    /* Tipografia */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
@@ -44,19 +34,16 @@
     --font-size-xl: 1.5rem;
     --font-size-2xl: 2rem;
 
-    /* Raio de Borda */
     --radius-sm: 0.5rem;
     --radius-md: 0.75rem;
     --radius-lg: 1rem;
     --radius-xl: 1.25rem;
 
-    /* Sombras */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 
-    /* Transições */
     --transition-fast: 0.15s ease;
     --transition-base: 0.2s ease;
     --transition-slow: 0.3s ease;
